@@ -1,15 +1,13 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3.0 + Vite" />
+	<i-header></i-header>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import iHeader from './views/header.vue';
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+	name: 'App',
+	components: {
+		iHeader
+	}
 }
 </script>
