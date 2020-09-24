@@ -24,11 +24,11 @@
 						>
 							<a
 								:href="item.href"
-								class="nav-link font-semibold"
+								class="nav-link"
 							>{{item.name}}</a>
 						</li>
 					</ul>
-					<button class="hidden md:inline-block user-center rounded-full bg-white font-semibold">
+					<button class="hidden md:inline-block user-center rounded-full bg-white">
 						<i class="fab fa-fort-awesome mr-2 text-xs"></i>
 						<span>用户中心</span>
 					</button>
@@ -37,11 +37,14 @@
 		</nav>
 		<!-- 内容展示 -->
 		<div class="site-desc mt-4 flex justify-between">
-			<div class="flex-1 flex flex-col items-center md:items-start text-white pt-12 md:pt-15">
-				<div>年付8折优惠活动，限时进行中 </div>
-				<div>全球网络加速服务，随时随地使用</div>
-				<div>通过我们的网络访问内容提供商、公司网络和公共云服务</div>
-				<button>开始使用</button>
+			<div class="flex-1 flex flex-col items-center md:items-start text-white pt-12 md:pt-15 md:mr-20">
+				<div class="mb-10 rounded-full recent-activity flex items-center text-xs">
+					<span class="mr-1 py-px px-1 rounded-full bg-red-600">New</span>
+					年付8折优惠活动，限时进行中
+				</div>
+				<div class="text-4xl mb-2">全球网络加速服务，随时随地使用</div>
+				<div class="mt-4 text-lg">通过我们的网络访问内容提供商、公司网络和公共云服务</div>
+				<button class=" shadow-xl mt-10 rounded-full py-3 px-8 bg-orange-400 text-base font-semibold">开始使用</button>
 			</div>
 			<div class="hidden md:block md:flex-1">
 				<img
@@ -82,6 +85,7 @@ export default {
 <style lang="postcss" scoped>
 .header-wrapper {
 	font-size: 14px;
+	@apply font-semibold;
 	height: 500px;
 	padding: 0 50px;
 	background-image: linear-gradient(to bottom, #697ded, #5e30c1);
@@ -138,5 +142,11 @@ export default {
 
 .site-desc {
 	height: 470px;
+}
+
+.recent-activity {
+	background-color: rgba(255, 255, 255, 0.2);
+	padding: 5px 10px;
+	cursor: pointer;
 }
 </style>
