@@ -1,5 +1,5 @@
 <template>
-	<div class="header-wrapper">
+	<div class="header-wrapper relative">
 		<!-- 顶部导航 -->
 		<nav class="top-navigation py-5">
 			<div class="nav-container h-full flex justify-between items-center flex-wrap">
@@ -43,8 +43,8 @@
 					年付8折优惠活动，限时进行中
 				</div>
 				<div class="text-4xl mb-2">全球网络加速服务，随时随地使用</div>
-				<div class="mt-4 text-lg">通过我们的网络访问内容提供商、公司网络和公共云服务</div>
-				<button class=" shadow-xl mt-10 rounded-full py-3 px-8 bg-orange-400 text-base font-semibold">开始使用</button>
+				<div class="mt-4 text-md">通过我们的网络访问内容提供商、公司网络和公共云服务</div>
+				<button class=" shadow-xl mt-10 rounded-full py-3 px-8 bg-orange-400 text-base">开始使用</button>
 			</div>
 			<div class="hidden md:block md:flex-1">
 				<img
@@ -58,6 +58,11 @@
 </template>
 
 <script>
+
+/**
+ * 顶部导航以及网页介绍
+ */
+
 import { reactive, ref } from 'vue';
 export default {
 	setup() {
@@ -85,23 +90,10 @@ export default {
 <style lang="postcss" scoped>
 .header-wrapper {
 	font-size: 14px;
-	@apply font-semibold;
-	height: 500px;
-	padding: 0 50px;
-	background-image: linear-gradient(to bottom, #697ded, #5e30c1);
 }
 
 .top-navigation {
 	height: 81px;
-}
-
-@media screen and (min-width: theme("screens.md")) {
-	.header-wrapper {
-		padding: 0 85px;
-	}
-}
-
-.nav-container {
 }
 
 .brand-text {

@@ -24,6 +24,7 @@
     --danger: #dc3545;
     --light: #f8f9fa;
     --dark: #343a40;
+    --text: #6777ef;
 }
 
 html {
@@ -33,4 +34,30 @@ html {
 #app {
     width: 100vw;
     height: 100vh;
+}
+
+.text-primary {
+    color: var(--text);
+}
+
+.text-secondary {
+    color: #6c757d;
+}
+
+section h2 {
+    font-size: 28px;
+}
+
+section .lead {
+    font-size: 18px;
+    line-height: 30px;
+    color: rgba(43, 13, 13, 0.5)
+}
+
+.text-14px {
+    font-size: 14px;
+}
+
+.text-10px {
+    font-size: 10px;
 }
